@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+dist/
+.DS_Store
+config.yml
+config/settings_data.json
+theme.css.liquid
+theme.js

@@ -1,0 +1,104 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 100%;
+&:before {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   content: '';
+   background: #000;
+   opacity: .8;
+   z-index: 9998;
+@supports(display: flex) {
+  display: none;
+}
+}
+&:after {
+   position: fixed;
+   bottom: 2em;
+   left: 4em;
+   width: calc(100% - 8em);
+   padding: 2em 0;
+   background: white;
+   z-index: 9999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+   color: var(--mine);
+   border: 5px solid var(--burn);
+   content: 'Your browser is out of date. Please download Microsoft Edge or any supported browser to continue.';
+@supports(display: flex) {
+  display: none;
+}
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: proxima-nova, sans-serif;
+  color: var(--mine);
+  font-weight: normal;
+  transition: transform .25s ease;
+&.menu-dropdown-open {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 999;
+   overflow-y: scroll
+ }
+&:before {
+   position: fixed;
+   top: -6.25em;
+   left: 0;
+   width: 100%;
+   height: 6.25em;
+   content: '';
+   z-index: 200;
+   background: white;
+ }
+&:after {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   content: '';
+   background: #222;
+   z-index: 140;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .13s ease;
+ }
+}
+
+a {
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+*[class$=-inner] {
+  padding: 0 1em;
+  margin: 0 auto;
+@media(--md) {
+  max-width: 80%;
+}
+}

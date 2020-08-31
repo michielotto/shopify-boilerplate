@@ -1,0 +1,18 @@
+@import url("https://use.typekit.net/bft1zuu.css");
+
+@font-face {
+  font-family: 'noyh';
+  src: local('Noyh');
+  src: url('../fonts/noyhblack-webfont.eot');
+  src: url('../fonts/noyhblack-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/noyhblack-webfont.woff2') format('woff2'),
+  url('../fonts/noyhblack-webfont.woff') format('woff'),
+  url('../fonts/noyhblack-webfont.ttf') format('truetype'),
+  url('../fonts/noyhblack-webfont.svg#noyh_blackregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --noyh: 'noyh', sans-serif;
+}
