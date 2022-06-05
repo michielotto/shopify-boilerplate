@@ -5,7 +5,7 @@
 First, install Shopify's [Themekit](https://shopify.github.io/themekit/). Once that is installed, you follow the next steps:
 
 ### Configure Store Theme
-First you need to hook up to a current them for local development. You can do so by running this:
+First you need to hook up to a current theme for local development. You can do so by running this:
 
 `theme configure --password=[your-api-password] --store=[your-store.myshopify.com] --themeid=[your-theme-id]`
 
